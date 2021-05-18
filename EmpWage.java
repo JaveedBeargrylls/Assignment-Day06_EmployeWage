@@ -1,6 +1,6 @@
 public class Empwage{
-static void Emp_wage(int Wage_per_hour, int Total_Working_days, int Maximum_work_hours){
-System.out.println("Welcome To Emloyee Wage");
+static void Emp_wage(String company, int Wage_per_hour, int Total_Working_days, int Maximum_work_hours){
+System.out.println("\n Welcome To Emloyee Wage"+"\n"+"\t"+company);
 int Emp_wage_hour = 0;
 int Monthly_wage = 0;
 int Working_days = 0, total_emp_hours = 0;
@@ -28,6 +28,7 @@ switch (empCheck) {
 	System.out.println("Monthly Wages of an Employee : " + Monthly_wage+"\n"+"Monthly Working Hours of an employee : "+total_emp_hours+"hours");
 }
 public static void main(String[] args){
-Emp_wage(30, 24, 100);
+Emp_wage("More", 30, 24, 100);
+Emp_wage("Reliance", 20, 30, 150);
 }
 }
